@@ -1,7 +1,7 @@
 # Comércio Local para vendas de peças automotivas
 
-Este projeto tem como objetivo facilitar a busca de peças automotivas próximas do local do usuário, sendo em um distância de até 20KM.
-O usuário que deseja vender seus produtos pode acessar o seu Dashboard, depois que efetuado o login, e cadastrar o seu produto.
+<p>Este projeto tem como objetivo facilitar a busca de peças automotivas próximas do local do usuário, sendo em um distância de até 20KM.</p>
+<p>O usuário que deseja vender seus produtos pode acessar o seu Dashboard, depois que efetuado o login, e cadastrar o seu produto.</p>
 
 ## Desenvolvido com as seguintes Tecnologias:
 
