@@ -1,0 +1,157 @@
+$primary-color: #37548E;
+$secundary-color: #333333;
+$thirdy-color: #F3F3F3;
+$fourth-color: #DCDCDC;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto;
+    background-color: $thirdy-color;
+}
+
+#root {
+    background-color: $thirdy-color;
+}
+
+.header {
+    height: 10vh;
+    background-color: $thirdy-color;
+    padding-top: 1.3vh;
+    .login-button {
+        background-color: $primary-color;
+        color: $thirdy-color;
+        border: none;
+        padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+        border-radius: 10px;
+        transition: 0.3s;
+        &:hover {
+            background-color: $thirdy-color;
+            color: #37548E;
+        } 
+    }
+}
+
+.input-container {
+    height: 30vh;
+    padding-top: 7vh;
+    h1 {
+        margin-bottom: 2.5vh;
+    }
+    .home-input {
+        background-color: $fourth-color;
+    }
+    .add-product-btn {
+        background-color: $primary-color;
+        border: none;
+        min-width: 15%;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $thirdy-color;
+        }
+    }
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    button {
+        background-color: transparent;
+        width: 20rem;
+        color: $secundary-color;
+        font-size: 24px;
+        font-weight: 600;
+        border: none;
+        padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    }
+    .active {
+        border-bottom: 2px solid $primary-color;
+    }
+}
+
+.products-container {
+    min-height: 60vh;
+    padding-bottom: 5vh;
+}
+
+.card {
+    .container-btn {
+        display: flex;
+        justify-content: end;
+        .delete-card-button {
+            font-size: 28px;
+            background-color: transparent;
+            border: none;
+            width: 3rem;
+        }  
+    }
+    .card-btn {
+        background-color: $primary-color;
+        color: $thirdy-color;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s;
+        &:hover {
+            background-color: white;
+            color: #37548E;
+        } 
+    }  
+}
+
+.map-container {
+    .mapboxgl-popup-content {
+        background-color: transparent;
+        width: max-content;
+        padding: 0;
+    }
+
+    .mapboxgl-popup-close-button {
+        font-size: 36px;
+        margin-right: 4px;
+        margin-top: 8px;
+    }
+
+    .marker-btn {
+        font-size: 26px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .active {
+        color: $primary-color;
+    }
+}
+
+.modal {
+    .password-button {
+        background-color: transparent;
+        color: $primary-color;
+        font-size: 24px;
+        margin-left: 5px;
+        height: 45px;
+        margin-top: 4px;
+        border: none;
+        &:hover {
+            background-color: white;
+            color: #37548E;
+        }
+    }
+    .buttons {
+        button {
+            background-color: $primary-color;
+            border: none;
+            &:hover {
+                background-color: white;
+                color: #37548E;
+            }
+        }
+    }
+}
