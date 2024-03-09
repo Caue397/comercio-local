@@ -2,6 +2,7 @@
 
 <p>Este projeto tem como objetivo facilitar a busca de peças automotivas próximas do local do usuário, sendo em um distância de até 20KM.</p>
 <p>O usuário que deseja vender seus produtos pode acessar o seu Dashboard, depois que efetuado o login, e cadastrar o seu produto.</p>
+<p>A aplicação também inclui um mapa que possui a localização dos produtos cadastrados.</p>
 
 ## Desenvolvido com as seguintes Tecnologias:
 
