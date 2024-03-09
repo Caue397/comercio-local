@@ -1,8 +1,9 @@
-# React + Vite
+# Comércio Local para vendas de peças automotivas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto tem como objetivo facilitar a busca de peças automotivas próximas do local do usuário, sendo em um distância de até 20KM.
 
-Currently, two official plugins are available:
+## Desenvolvido com as seguintes Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+
+
