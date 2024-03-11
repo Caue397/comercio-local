@@ -1,8 +1,30 @@
-# React + Vite
+# Comércio Local para vendas de peças automotivas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Este projeto tem como objetivo facilitar a busca de peças automotivas próximas do local do usuário, sendo em um distância de até 20KM.</p>
+<p>O usuário que deseja vender seus produtos pode acessar o seu Dashboard, depois que efetuado o login, e cadastrar o seu produto.</p>
+<p>A aplicação também inclui um mapa que possui a localização dos produtos cadastrados.</p>
 
-Currently, two official plugins are available:
+## Desenvolvido com as seguintes Tecnologias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div>
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+  <img height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
