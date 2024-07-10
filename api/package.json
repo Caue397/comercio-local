@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
-    "build": "node src/index.js",
     "host": "nodemon 192.168.15.7 src/index.js"
   },
   "keywords": [],
