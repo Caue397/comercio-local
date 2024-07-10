@@ -13,15 +13,15 @@ export default function RootLayout() {
     const toggle = () => setModal(!modal);
     const [dropdown, setDropdown] = useState(false)
     const toggleDropdown = () => setDropdown(!dropdown)
-    const [ deleteUserModal, setDeleteUserModal ] = useState(false)
+    const [deleteUserModal, setDeleteUserModal] = useState(false)
     const toggleDeleteUserModal = () => setDeleteUserModal(!deleteUserModal)
     const navigate = useNavigate()
 
     const { userData, setUserData } = useUser()
 
-    async function handleLogout (ev) {
+    async function handleLogout(ev) {
         ev.preventDefault()
-        
+
         setUserData((prevState) => ({
             ...prevState,
             isLogged: false,
@@ -54,62 +54,62 @@ export default function RootLayout() {
                         <img src={Logo} alt="Logo" style={{
                             width: 50,
                             height: 50,
-                            borderRadius: 10
-                        }}/>
+                            borderRadius: 8
+                        }} />
                     </Link>
                     <Nav>
-                    { 
-                    userData.isLogged ?
-                    <> 
-                        <Dropdown
-                        isOpen={dropdown} 
-                        toggle={toggleDropdown}
-                        >
-                            <DropdownToggle className="login-button">
-                                Olá, {userData.name} <BsArrowDownShort style={{fontSize: '20px'}}/>
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                <DropdownItem>
-                                    <Link 
-                                    to='/dashboard'
-                                    style={{
-                                        textDecoration: 'none',
-                                        color: 'black'
-                                    }}
+                        {
+                            userData.isLogged ?
+                                <>
+                                    <Dropdown
+                                        isOpen={dropdown}
+                                        toggle={toggleDropdown}
                                     >
-                                        <BsWindowFullscreen /> Dashboard
-                                    </Link>
-                                </DropdownItem>
-                                <DropdownItem
-                                    onClick={toggleDeleteUserModal}
-                                >
-                                    <BsTrash3 /> Excluir conta
-                                </DropdownItem>
-                                <DropdownItem 
-                                    className="dropdown-item"
-                                    onClick={handleLogout}
-                                >
-                                    <BsBoxArrowRight /> Sair
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
-                        <Modal 
-                        isOpen={deleteUserModal} 
-                        toggle={toggleDeleteUserModal}
-                        centered
-                        >
-                            <ModalHeader className="d-flex justify-content-center">
-                                Tem certeza que deseja excluir sua conta?
-                            </ModalHeader>
-                            <ModalBody className="d-flex justify-content-center gap-4">
-                                <Button onClick={deleteUser} color="danger">Sim, tenho certeza</Button>
-                                <Button onClick={toggleDeleteUserModal} color="success">Cancelar</Button>
-                            </ModalBody>
-                        </Modal>
-                    </> 
-                    : 
-                    <button className="login-button" onClick={toggle}>Entrar</button> 
-                    }
+                                        <DropdownToggle className="login-button">
+                                            Olá, {userData.name} <BsArrowDownShort style={{ fontSize: '20px' }} />
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem>
+                                                <Link
+                                                    to='/dashboard'
+                                                    style={{
+                                                        textDecoration: 'none',
+                                                        color: 'black'
+                                                    }}
+                                                >
+                                                    <BsWindowFullscreen /> Dashboard
+                                                </Link>
+                                            </DropdownItem>
+                                            <DropdownItem
+                                                onClick={toggleDeleteUserModal}
+                                            >
+                                                <BsTrash3 /> Excluir conta
+                                            </DropdownItem>
+                                            <DropdownItem
+                                                className="dropdown-item"
+                                                onClick={handleLogout}
+                                            >
+                                                <BsBoxArrowRight /> Sair
+                                            </DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                    <Modal
+                                        isOpen={deleteUserModal}
+                                        toggle={toggleDeleteUserModal}
+                                        centered
+                                    >
+                                        <ModalHeader className="d-flex justify-content-center">
+                                            Tem certeza que deseja excluir sua conta?
+                                        </ModalHeader>
+                                        <ModalBody className="d-flex justify-content-center gap-4">
+                                            <Button onClick={deleteUser} color="danger">Sim, tenho certeza</Button>
+                                            <Button onClick={toggleDeleteUserModal} color="success">Cancelar</Button>
+                                        </ModalBody>
+                                    </Modal>
+                                </>
+                                :
+                                <button className="login-button" onClick={toggle}>Entrar</button>
+                        }
                     </Nav>
                 </Navbar>
             </Container>
